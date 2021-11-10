@@ -1,0 +1,22 @@
+package com.example.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.model.Pet;
+
+@Controller
+public class PetController {
+
+	@RequestMapping("/pet")
+	public String addPet(Model model) {
+		return "pet/form";
+	}
+
+	@RequestMapping("/showPet")
+	public String showGreeting(@ModelAttribute Pet pet) {
+		return "pet/show";
+	}
+}
