@@ -26,7 +26,7 @@ public class Hw1Application {
 		
 		// Create hotel
 		Hotel hotel = new Hotel();
-		hotel.setId(0);
+		hotel.setId(12);
 		hotel.setName("The Grand Budapest Hotel");
 		hotel.setDescription("It's a nice hotel with interesting staff");
 		
