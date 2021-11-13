@@ -3,6 +3,7 @@ package co2103.hw1;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,7 +11,7 @@ import co2103.hw1.domain.Hotel;
 import co2103.hw1.domain.Room;
 
 @SpringBootApplication
-public class Hw1Application {
+public class Hw1Application implements CommandLineRunner {
 	
 	public static List<Hotel> hotels = new ArrayList<>();
 
@@ -22,6 +23,7 @@ public class Hw1Application {
 		SpringApplication.run(Hw1Application.class, args);
 	}
 
+	@Override
 	public void run(String... args) {
 		
 		// Create hotel
