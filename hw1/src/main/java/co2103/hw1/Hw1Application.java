@@ -41,7 +41,7 @@ public class Hw1Application implements CommandLineRunner {
 		room.setCategory("suite");
 		room.setGuests(1);
 		roomsList.add(room);
-	
+		
 		room = new Room();
 		room.setName("Luxury Suite");
 		room.setDescription("Peak of luxury for 2");
